@@ -1,0 +1,89 @@
+---
+external help file: AzureDevOpsPwsh-help.xml
+Module Name: AzureDevOpsPwsh
+online version:
+schema: 2.0.0
+---
+
+# Get-AllReleases
+
+## SYNOPSIS
+List all releases
+
+## SYNTAX
+
+```
+Get-AllReleases [[-username] <String>] [[-AZDevOpsOrg] <String>] [[-AZDevOpsProject] <String>]
+ [<CommonParameters>]
+```
+
+## DESCRIPTION
+List all releases in the specified Azure DevOps Organization and Project
+
+## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> Get-AllBuilds -username your_email_for_azure_devops -AZDevOpsOrg devops_org_name -AZDevOpsProject devops_project_name
+```
+
+## PARAMETERS
+
+### -AZDevOpsOrg
+This parameter is for the name of your DevOps org. If you go to your Azure DevOps URL, it's the name right after the backslash of "https://dev.azure.com/"
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 1
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AZDevOpsProject
+This parameter is for the name of your DevOps org. If you go to your Azure DevOps URL, it's the name right after the Organization name "https://dev.azure.com/your_org/"
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -username
+Email address that you use to sign into Azure DevOps and Azure
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: 0
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+
+## INPUTS
+
+### None
+
+## OUTPUTS
+
+### System.Object
+## NOTES
+
+## RELATED LINKS

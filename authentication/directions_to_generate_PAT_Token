@@ -1,0 +1,7 @@
+1. Log into your Azure DevOps profile
+2. Click on your profile (the icon that has a person and a gear)
+3. Click on profile
+4. Under security click on Personal access tokens
+5. Click New Token
+
+At this point you will want to give your PAT Token the not only the necessary permissions, but the necessary time frame that you would like the PAT token to be active.
